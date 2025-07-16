@@ -1,0 +1,155 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #1f1f1f;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+table#leaderboard,
+table#leaderboard th,
+table#leaderboard td,
+table#userLeaderboard,
+table#userLeaderboard th,
+table#userLeaderboard td {
+    border-collapse: collapse;
+    background-color: #1f1f1f; /* Dark background for the whole table */
+    color: #ffffff; /* Light text */
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+table#leaderboard th,
+table#leaderboard td,
+table#userLeaderboard th,
+table#userLeaderboard td {
+    border: 1px solid #424242; /* Border color around cells */
+    padding: 8px;
+    text-align: left;
+    color: #ffffff; /* Light text */
+    background-color: #2e2e2e; /* Darker cell background */
+    min-width: 80px; /* Sets a minimum width for each cell */
+}
+
+table#leaderboard th,
+table#userLeaderboard th {
+    background-color: #424242; /* Header background color */
+    color: #ffffff; /* Light text */
+}
+
+table#leaderboard tr:nth-child(even),
+table#userLeaderboard tr:nth-child(even) {
+    background-color: #2e2e2e; /* Alternate row background */
+}
+
+table#leaderboard tr:hover,
+table#userLeaderboard tr:hover {
+    background-color: #3e3e3e; /* Highlighted row background on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #1f1f1f;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+table#leaderboard td a,
+table#userLeaderboard td a {
+    color: #bb86fc; /* Brighter color for links in the table */
+    text-decoration: none;
+}
+
+table#leaderboard td a:hover,
+table#userLeaderboard td a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #bb86fc; /* Brighter color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    table#leaderboard,
+    table#userLeaderboard {
+        width: 100%;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        display: block;
+    }
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #ffffff !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 3px;
+    color: #ffffff; /* Light text color */
+}
+
+.dataTables_wrapper .dataTables_filter input::placeholder {
+    color: #bbbbbb; /* Lighter gray for placeholder text */
+}
+
+#flashing-message {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(46, 28, 151);
+    font-weight: bold;
+    animation: flash 10s infinite;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

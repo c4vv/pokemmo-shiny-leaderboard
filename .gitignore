@@ -1,0 +1,14 @@
+users/*
+!users/index.php
+
+teams/*
+!teams/index.php
+
+node_modules/*
+node_modules
+
+package-lock.json
+
+.vscode/
+
+!.htaccess
