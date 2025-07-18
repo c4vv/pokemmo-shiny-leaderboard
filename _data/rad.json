@@ -1,8 +1,8 @@
 {
     "name": "Radiance",
-    "code": "R\u00e4d",
-    "url": "https:\/\/radiance-backend-production.up.railway.app\/api\/users",
-    "totalshinies": 4117,
+    "code": "R\\u00e4d",
+    "url": "https:\\\/\\\/radiance-backend-production.up.railway.app\\\/api\\\/users",
+    "totalshinies": 2872,
     "members": [
         {
             "username": "Alphy",
@@ -35,14 +35,6 @@
         {
             "username": "Avoh",
             "count": 13
-        },
-        {
-            "username": "Baldy",
-            "count": 42
-        },
-        {
-            "username": "Barrelz",
-            "count": 25
         },
         {
             "username": "Bearoloko",
@@ -93,10 +85,6 @@
             "count": 6
         },
         {
-            "username": "Chicken",
-            "count": 92
-        },
-        {
             "username": "Chinredgold",
             "count": 30
         },
@@ -107,10 +95,6 @@
         {
             "username": "Clout",
             "count": 61
-        },
-        {
-            "username": "Clue",
-            "count": 71
         },
         {
             "username": "cnnr",
@@ -197,20 +181,12 @@
             "count": 7
         },
         {
-            "username": "Framed",
-            "count": 41
-        },
-        {
             "username": "Fraxci",
             "count": 9
         },
         {
             "username": "funz",
             "count": 33
-        },
-        {
-            "username": "GingerMatt",
-            "count": 101
         },
         {
             "username": "Giovanni",
@@ -231,10 +207,6 @@
         {
             "username": "Gracidea",
             "count": 23
-        },
-        {
-            "username": "Grave",
-            "count": 42
         },
         {
             "username": "GreenKitten",
@@ -329,16 +301,8 @@
             "count": 24
         },
         {
-            "username": "Karoshi",
-            "count": 74
-        },
-        {
             "username": "Katana",
             "count": 7
-        },
-        {
-            "username": "Kiwi",
-            "count": 21
         },
         {
             "username": "Kmills",
@@ -365,10 +329,6 @@
             "count": 21
         },
         {
-            "username": "lukidera",
-            "count": 48
-        },
-        {
             "username": "Mani",
             "count": 13
         },
@@ -393,16 +353,8 @@
             "count": 39
         },
         {
-            "username": "Minish",
-            "count": 52
-        },
-        {
             "username": "MisterHargreeves",
             "count": 5
-        },
-        {
-            "username": "mitch",
-            "count": 67
         },
         {
             "username": "MrLezard",
@@ -425,10 +377,6 @@
             "count": 9
         },
         {
-            "username": "Noah",
-            "count": 21
-        },
-        {
             "username": "Noonan",
             "count": 36
         },
@@ -449,16 +397,8 @@
             "count": 20
         },
         {
-            "username": "Parke",
-            "count": 49
-        },
-        {
             "username": "pasta",
             "count": 26
-        },
-        {
-            "username": "Police",
-            "count": 9
         },
         {
             "username": "Porsche",
@@ -481,10 +421,6 @@
             "count": 16
         },
         {
-            "username": "Raph",
-            "count": 15
-        },
-        {
             "username": "Redemption",
             "count": 68
         },
@@ -495,10 +431,6 @@
         {
             "username": "Riiz",
             "count": 26
-        },
-        {
-            "username": "Rizz",
-            "count": 91
         },
         {
             "username": "Rompert",
@@ -519,14 +451,6 @@
         {
             "username": "Shamandarah",
             "count": 6
-        },
-        {
-            "username": "Shine",
-            "count": 73
-        },
-        {
-            "username": "Shinycarp",
-            "count": 55
         },
         {
             "username": "shomni",
@@ -589,10 +513,6 @@
             "count": 2
         },
         {
-            "username": "Texas",
-            "count": 26
-        },
-        {
             "username": "Theldram",
             "count": 19
         },
@@ -609,10 +529,6 @@
             "count": 18
         },
         {
-            "username": "Totes",
-            "count": 44
-        },
-        {
             "username": "TwoAbysz",
             "count": 2
         },
@@ -622,7 +538,7 @@
         },
         {
             "username": "Uzzu",
-            "count": 49
+            "count": 50
         },
         {
             "username": "veeyaxi",
@@ -637,10 +553,6 @@
             "count": 18
         },
         {
-            "username": "Violet",
-            "count": 15
-        },
-        {
             "username": "Watcha",
             "count": 26
         },
@@ -651,14 +563,6 @@
         {
             "username": "wilson",
             "count": 27
-        },
-        {
-            "username": "Woomy",
-            "count": 59
-        },
-        {
-            "username": "Worvik",
-            "count": 55
         },
         {
             "username": "Wzke",
@@ -677,10 +581,6 @@
             "count": 14
         },
         {
-            "username": "YoungCabbage",
-            "count": 25
-        },
-        {
             "username": "Yung",
             "count": 21
         },
@@ -691,10 +591,6 @@
         {
             "username": "Zard",
             "count": 5
-        },
-        {
-            "username": "Zephy",
-            "count": 33
         }
     ]
 }
