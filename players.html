@@ -3,7 +3,7 @@ layout: default
 title: Player Leaderboard
 ---
 
-<h1>🏆 Player Leaderboard</h1>
+<h1>Player Leaderboard</h1>
 
 <div id="player-leaderboard"></div>
 <div id="pagination-controls" style="margin-top: 1em;"></div>
@@ -41,7 +41,7 @@ function renderPage(page) {
 
   slice.forEach(player => {
     const li = document.createElement("li");
-    li.textContent = `${player.username} [${player.team}] — ${player.count} shinies`;
+    li.innerHTML = `<strong>${player.username}</strong> [${player.team.toUpperCase()}] — ${player.count} shinies`;
     ol.appendChild(li);
   });
 
