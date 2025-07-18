@@ -1,0 +1,71 @@
+---
+layout: default
+title: Player Leaderboard
+---
+
+<h1>🏆 Player Leaderboard</h1>
+
+<div id="player-leaderboard"></div>
+<div id="pagination-controls" style="margin-top: 1em;"></div>
+
+<script>
+const players = [
+  {% assign all_players = "" | split: "" %}
+  {% for team in site.data %}
+    {% assign team_name = team[0] %}
+    {% for player in team[1].members %}
+      {
+        "username": {{ player.username | jsonify }},
+        "count": {{ player.count }},
+        "team": {{ team_name | jsonify }}
+      }{% unless forloop.last and forloop.parentloop.last %},{% endunless %}
+    {% endfor %}
+  {% endfor %}
+];
+
+players.sort((a, b) => b.count - a.count);
+
+const perPage = 100;
+let currentPage = 1;
+
+function renderPage(page) {
+  const start = (page - 1) * perPage;
+  const end = start + perPage;
+  const slice = players.slice(start, end);
+
+  const list = document.getElementById("player-leaderboard");
+  list.innerHTML = "";
+
+  const ol = document.createElement("ol");
+  ol.start = start + 1;
+
+  slice.forEach(player => {
+    const li = document.createElement("li");
+    li.textContent = `${player.username} [${player.team}] — ${player.count} shinies`;
+    ol.appendChild(li);
+  });
+
+  list.appendChild(ol);
+  renderPaginationControls();
+}
+
+function renderPaginationControls() {
+  const totalPages = Math.ceil(players.length / perPage);
+  const container = document.getElementById("pagination-controls");
+  container.innerHTML = "";
+
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement("button");
+    btn.textContent = i;
+    btn.disabled = i === currentPage;
+    btn.style.marginRight = "0.25em";
+    btn.onclick = () => {
+      currentPage = i;
+      renderPage(currentPage);
+    };
+    container.appendChild(btn);
+  }
+}
+
+renderPage(currentPage);
+</script>

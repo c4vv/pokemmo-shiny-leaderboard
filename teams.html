@@ -1,0 +1,21 @@
+---
+layout: leaderboard
+title: All Teams Ranked
+---
+
+<h1>All Teams Ranked</h1>
+{% assign teams = "" | split: "" %}
+{% for file in site.data %}
+  {% assign team = file[1] %}
+  {% assign teams = teams | push: team %}
+{% endfor %}
+
+{% assign sorted_teams = teams | sort: "totalshinies" | reverse %}
+
+<ol>
+  {% for team in sorted_teams %}
+    <li>
+      <strong>{{ team.name }}</strong> – {{ team.totalshinies }} shinies
+    </li>
+  {% endfor %}
+</ol>
